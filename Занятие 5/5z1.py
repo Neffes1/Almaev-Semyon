@@ -1,7 +1,7 @@
 def F(N):
     for i in range(1, N):
-        s = i*i
-        print(s)
+        a = i*i
+        print(a)
 
 N = int(input())
 
