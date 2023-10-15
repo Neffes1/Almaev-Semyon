@@ -1,9 +1,9 @@
 def F(x, y)
-    d = 1
+    a = 1
     while x < y:
         x = x + x * 0.10
-        d += 1
-    print(d)
+        a += 1
+    print(a)
 
 x = float(input())
 y = float(input())
