@@ -1,10 +1,10 @@
 def F(n):
-    c = 0
+    a = 0
     while True:
         if n == 0:
             break
-        c += 1
-    print(c)
+        a += 1
+    print(a)
 
 n  = int(input())
 
