@@ -6,6 +6,7 @@ def count_words_starting_with_e(text):
     
     return len(matches)
 
+# Пример использования функции
 text = "Дана строка с русскоязычным текстом. Найти слова, начинающиеся с буквы е (или ё)."
 result = count_words_starting_with_e(text)
 print("Количество слов, начинающихся с 'е' или 'ё':", result)
