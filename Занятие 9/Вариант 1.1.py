@@ -13,7 +13,7 @@ def calculate_sum_and_count_of_positive_elements(matrix):
 
 # Пример использования функции:
 N = 3
-A = [[-1, 2, 3], [4, -5, 6], [-7, 8, 9]]  # Замените эту матрицу на вашу
+A = [[-1, 2, 3], [4, -5, 6], [-7, 8, 9]]  # Замените эту матрицу на нужную
 sum_result, count_result = calculate_sum_and_count_of_positive_elements(A)
 
 print("Сумма положительных элементов над главной диагональю:", sum_result)
