@@ -5,11 +5,9 @@ public class SumOfPowers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        
         int number = input.nextInt();
         int startIndex = input.nextInt();
 
-        
         int sum = 0;
         int digit;
         int power = startIndex;
@@ -20,10 +18,8 @@ public class SumOfPowers {
             power++;
         }
 
-        
         boolean isPossible = sum % 64 == 0;
 
-        
         System.out.println(isPossible ? "Yes" : "No");
     }
 }
