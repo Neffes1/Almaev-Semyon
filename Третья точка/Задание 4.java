@@ -13,10 +13,8 @@ public class ChooseBestSum {
     }
 
     public static int chooseBestSum(int maxDistance, int numCities, int[] distances) {
-        // Sort the distances in ascending order
         Arrays.sort(distances);
 
-        // Find all possible combinations of cities
         int[][] combinations = new int[numCities][];
         for (int i = 0; i < numCities; i++) {
             combinations[i] = new int[i + 1];
@@ -25,7 +23,6 @@ public class ChooseBestSum {
             }
         }
 
-        // Find the combination with the largest sum that is less than or equal to the max distance
         int bestSum = 0;
         for (int[] combination : combinations) {
             int sum = 0;
