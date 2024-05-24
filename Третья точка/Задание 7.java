@@ -7,7 +7,6 @@ public class SortWeightsInGym {
 
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
-        // тут мы высталяем все веса из спортзала для их сортировки
         numbers.add(56);
         numbers.add(65);
         numbers.add(74);
