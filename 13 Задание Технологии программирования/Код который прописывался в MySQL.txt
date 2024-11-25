@@ -1,0 +1,39 @@
+CREATE TABLE Department (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    working_hours VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Product (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES Department(id)
+        ON DELETE CASCADE
+);
+
+SHOW TABLES;
+
+//Мы должны увидеть
+
++------------------+
+| Tables_in_ShopDB |
++------------------+
+| Department       |
+| Product          |
++------------------+
+
+DESCRIBE Department;
+DESCRIBE Product;
+
+INSERT INTO Department (name, working_hours)
+VALUES 
+    ('Electronics', '9:00-21:00'),
+    ('Clothing', '10:00-20:00');
+
+INSERT INTO Product (name, price, department_id)
+VALUES 
+    ('Smartphone', 599.99, 1),
+    ('Jeans', 49.99, 2);
+
